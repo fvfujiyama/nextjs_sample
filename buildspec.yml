@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo install started on `date`
+  build:
+    commands:
+      - echo Build started on `date`
+      - cd nextjs_sample
+      - npm next export
+  post_build:
+    commands:
+      - ls
+#      - aws s3 sync ./build s3://### --delete --acl public-read 
+#      - aws cloudfront create-invalidation --distribution-id ###ID### --paths "/*"
