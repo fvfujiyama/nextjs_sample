@@ -10,3 +10,7 @@ permissions:
     mode: 777
     pattern: "**"
 
+hooks:
+   AfterInstall:
+     - location: Scripts/AfterInstall.sh
+       timeout: 180
