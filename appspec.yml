@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/account-api
+    destination: /home/ec2-user
 permissions:
   - object: /
     owner: ec2-user
