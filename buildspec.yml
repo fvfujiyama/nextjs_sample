@@ -3,6 +3,7 @@ phases:
   install:
     commands:
       - echo install started on `date`
+      - npm install next react react-dom
   build:
     commands:
       - echo Build started on `date`
