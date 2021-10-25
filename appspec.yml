@@ -9,8 +9,16 @@ permissions:
     group: ec2-user
     mode: 777
     pattern: "**"
-
 hooks:
-   AfterInstall:
-     - location: Scripts/AfterInstall.sh
-       timeout: 180
+  AfterInstall:
+    - location: scripts/change_permissions.sh
+      timeout: 300
+      runas: ec2-user
+  ApplicationStart:
+    - location: scripts/start_server.sh
+      timeout: ec2-user
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_server.sh
+      timeout: ec2-user
+      runas: root
