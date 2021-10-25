@@ -1,11 +1,11 @@
 version: 0.0
 os: linux
 files:
-  - source: ./testDir1
+  - source: /testDir1
     destination: /tmp/testDir1
 file_exists_behavior: OVERWRITE
 permissions:
-  - object: /
+  - object: /tmp/testDir1
     owner: ec2-user
     group: ec2-user
     mode: 777
