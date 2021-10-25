@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /scripts/change_permissions.sh
-    destination: /home/ec2-userscripts/change_permissions.sh
+  - source: /nextjs_sample
+    destination: /tmp/nextjs_sample
 file_exists_behavior: OVERWRITE
 permissions:
   - object: /
