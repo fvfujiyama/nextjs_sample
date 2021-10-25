@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /testDir1
+  - source: ./testDir1
     destination: /tmp/testDir1
 file_exists_behavior: OVERWRITE
 permissions:
